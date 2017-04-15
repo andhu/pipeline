@@ -53,7 +53,7 @@ build:
         go test -v $(glide novendor)
 
     - script:
-      name: copy files to wercker output
+      name: copy files to .yml output
       code: |
         cp -R ./ ${WERCKER_OUTPUT_DIR}
 
