@@ -62,8 +62,7 @@ deploy:
     - internal/docker-push:
         username: andhu
         password: Cba415263
-        # cmd: /pipeline/source/hello
-        # port: "8080"
+        port: "8080"
         tag: latest
         repository: andhu/pipeline
         registry: https://registry.hub.docker.com
