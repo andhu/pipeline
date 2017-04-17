@@ -60,19 +60,19 @@ build:
 deploy:
   steps:
     - internal/docker-push:
-      username: $USERNAME
-      password: $PASSWORD
-      cmd: /pipeline/source/hello
-      port: "8080"
-      tag: latest
-      respository: andhu/pipeline
-      registry: https://registry.hub.docker.com
+        username: 'andhu'
+        password: '1234'
+        # cmd: /pipeline/source/hello
+        # port: "8080"
+        tag: latest
+        respository: andhu/pipeline
+        registry: https://registry.hub.docker.com
 
-    - cng/cf-deploy:
-      api: $API
-      user: $USER
-      password: $PASSWORD
-      org: $ORG
-      space: $SPACE
-      appname: hello-pipeline
-      docker_image: andhu/pipeline
+    # - cng/cf-deploy:
+    #   api: $API
+    #   user: $USER
+    #   password: $PASSWORD
+    #   org: $ORG
+    #   space: $SPACE
+    #   appname: hello-pipeline
+    #   docker_image: andhu/pipeline
