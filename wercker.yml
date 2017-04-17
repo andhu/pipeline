@@ -60,8 +60,9 @@ build:
 deploy:
   steps:
     - internal/docker-push:
-        username: andhu
-        password: Cba415263
+        username: $USERNAME
+        password: $PASSWORD
+        cmd: /pipeline/source/pipeline
         port: "8080"
         tag: latest
         repository: andhu/pipeline
