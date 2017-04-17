@@ -60,12 +60,12 @@ build:
 deploy:
   steps:
     - internal/docker-push:
-        username: 'andhu'
-        password: '1234'
+        username: andhu
+        password: Cba415263
         # cmd: /pipeline/source/hello
         # port: "8080"
         tag: latest
-        respository: andhu/pipeline
+        repository: andhu/pipeline
         registry: https://registry.hub.docker.com
 
     # - cng/cf-deploy:
