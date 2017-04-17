@@ -1,0 +1,8 @@
+hash: 2cb0424fdfc0d3e51d58f99a3fc45ade40d07fc02fbaa21991bb2e9d897d04bf
+updated: 2017-04-17T19:29:22.602208845+05:00
+imports:
+- name: github.com/mattn/go-runewidth
+  version: 14207d285c6c197daabb5c9793d63e7af9ab2d50
+- name: github.com/olekukonko/tablewriter
+  version: febf2d34b54a69ce7530036c7503b1c9fbfdf0bb
+testImports: []
